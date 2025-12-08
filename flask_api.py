@@ -1,13 +1,3 @@
-"""
-This file provides database access for SSA baby names data.
-
-Note: The 'ssa_names.db' SQLite database file must be populated
-by running the SSA data import process that reads SSA text files and inserts
-records into the 'NameStats' table. Without this, the API relying on this module
-will not function correctly.
-"""
-
-
 from flask import Flask, request, jsonify
 from database import get_conn  # uses DB_PATH and NameStats in ssa_names.db
 
